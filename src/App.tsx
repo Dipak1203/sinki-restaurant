@@ -4,6 +4,7 @@ import FoodSearch from "./components/FoodSearch"
 import ExploreFood from "./components/ExploreFood"
 import FoodMenu from "./components/FoodMenu"
 import { SocialMedia } from "./components/SocialMedia"
+import Footer from "./components/Footer"
 const App = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const App = () => {
       <ExploreFood />
       <FoodMenu />
       <SocialMedia />
+      <Footer />
     </div>
   )
 }
