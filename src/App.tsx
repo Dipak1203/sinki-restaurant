@@ -3,6 +3,7 @@ import './App.css'
 import FoodSearch from "./components/FoodSearch"
 import ExploreFood from "./components/ExploreFood"
 import FoodMenu from "./components/FoodMenu"
+import { SocialMedia } from "./components/SocialMedia"
 const App = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const App = () => {
       <FoodSearch />
       <ExploreFood />
       <FoodMenu />
+      <SocialMedia />
     </div>
   )
 }
