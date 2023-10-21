@@ -1,8 +1,9 @@
-
+import Navbar from "./components/Navbar"
+import './App.css'
 const App = () => {
   return (
     <div>
-        Dipak
+      <Navbar />
     </div>
   )
 }
