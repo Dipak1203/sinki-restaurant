@@ -200,6 +200,18 @@ fieldset{
   font-weight: bold;
 }
 
+.explore_button{
+  text-align: center;
+}
+.explore_button button{
+  text-align: center;
+  background:  #ff4757;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 19px;
+}
+
 
 
 /* CSS for Mobile Size or Smaller Screen */
