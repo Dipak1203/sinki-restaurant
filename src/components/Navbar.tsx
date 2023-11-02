@@ -1,31 +1,32 @@
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <section className="navbar">
       <div className="container">
         <div className="logo">
-          <a href="#" title="Logo">
+          <NavLink to="" title="Logo">
             <img
               src="https://image.similarpng.com/very-thumbnail/2021/07/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG.png"
               alt="Restaurant Logo"
               className="img-responsive"
             />
-          </a>
+          </NavLink>
         </div>
 
         <div className="menu text-right">
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="categories.html">Categories</a>
+              <NavLink to="/categories">Categories</NavLink>
             </li>
             <li>
-              <a href="foods.html">Foods</a>
+              <NavLink to="/foods">Foods</NavLink>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>

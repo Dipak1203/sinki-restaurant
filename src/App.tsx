@@ -1,21 +1,18 @@
-import Navbar from "./components/Navbar"
-import './App.css'
-import FoodSearch from "./components/FoodSearch"
-import ExploreFood from "./components/ExploreFood"
-import FoodMenu from "./components/FoodMenu"
-import { SocialMedia } from "./components/SocialMedia"
-import Footer from "./components/Footer"
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./components/UI/HomePage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <FoodSearch />
-      <ExploreFood />
-      <FoodMenu />
-      <SocialMedia />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
       <Footer />
-    </div>
-  )
-}
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
