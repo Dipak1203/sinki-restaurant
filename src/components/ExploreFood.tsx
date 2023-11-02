@@ -1,3 +1,5 @@
+
+
 const ExploreFood = () => {
   return (
     <section className="categories">
