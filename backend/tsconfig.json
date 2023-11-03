@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "ES2016",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "module": "CommonJS",
+      "outDir": "./build/",
+      "rootDir": "./src",
+      "strict": true,
+      "baseUrl": "./src",
+      "paths": {
+        "*": ["node_modules"]
+      },
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "strictPropertyInitialization": false,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "typeRoots": [
+        "./node_module/@types",
+        "./src/types"
+  ],
+    },
+  
+    "include": ["src/**/*.ts"],
+    "exclude": ["movies", "**/*.legacy.ts", "node_modules/**/*.ts"]
+  }
