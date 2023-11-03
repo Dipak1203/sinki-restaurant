@@ -12,9 +12,9 @@
   font-family: 'Oswald', sans-serif;
 }
 .container{
-  width: 80%;
-  margin: 0 auto;
-  padding: 1%;
+  width: 80% !important;
+  margin: 0 auto !important;
+  padding: 1% !important;
 }
 .img-responsive{
   width: 100%;
