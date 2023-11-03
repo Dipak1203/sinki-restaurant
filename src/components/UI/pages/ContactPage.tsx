@@ -6,8 +6,8 @@ const ContactPage = () => {
   focus:invalid:border-pink-500 focus:invalid:ring-pink-500
 `;
   return (
-    <div className="mt-3">
-      <main className="flex justify-around gap-2">
+    <div className="mt-3 container">
+      <main className="flex justify-betweeen gap-12">
         <form>
           <div className="flex gap-2">
             <input

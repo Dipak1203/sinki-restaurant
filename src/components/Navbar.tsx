@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <section className="navbar">
-      <div className="container">
+    <section className="navbar container">
+      <div className="">
         <div className="logo">
           <NavLink to="" title="Logo">
             <img
