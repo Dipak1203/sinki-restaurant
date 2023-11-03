@@ -1,7 +1,6 @@
 import ExploreFood from "../ExploreFood";
 import FoodMenu from "../FoodMenu";
 import FoodSearch from "../FoodSearch";
-import { SocialMedia } from "../SocialMedia";
 
 const HomePage = () => {
   return (
@@ -9,7 +8,6 @@ const HomePage = () => {
       <FoodSearch />
       <ExploreFood />
       <FoodMenu />
-      <SocialMedia />
     </div>
   );
 };
