@@ -13,7 +13,7 @@ const FoodSearch = () => {
             type="submit"
             name="submit"
             value="Search"
-            className="btn btn-primary"
+            className="btn ml-3 w-32 hover:cursor-pointer bg-[#ff4757] text-white"
           />
         </form>
       </div>
