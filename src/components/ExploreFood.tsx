@@ -10,16 +10,30 @@ type ImgDataType = {
 const ExploreFood = () => {
   const [data, setData] = useState<ImgDataType[]>([]);
 
-  const filterData: ImgDataType[] = imgData.filter((data) => {
-    return data.category === "explore";
-  });
+  useEffect(() =>{
+    setData(imgData)
+  },[])
 
-  console.log(data, " img data");
-  useEffect(() => {
-    setData(filterData);
-  }, []);
+  // console.log(data, " data here...")
   return (
     <section className="categories">
+       <section className="food-search text-center">
+      <div className="container">
+        <form>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search for Food.."
+            required
+          />
+          <input
+            type="submit"
+            value="Search"
+            className="btn ml-3 w-32 hover:cursor-pointer bg-[#ff4757] text-white"
+          />
+        </form>
+      </div>
+    </section>
       <div className="container">
         <h2 className="text-center">Explore Foods</h2>
 
