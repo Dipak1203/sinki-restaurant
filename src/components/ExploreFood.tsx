@@ -9,7 +9,7 @@ type ImgDataType = {
 };
 
 const ExploreFood = () => {
-  const [originalData, setOriginalData] = useState<ImgDataType[]>(imgData);
+  const [originalData] = useState<ImgDataType[]>(imgData);
   const [filteredData, setFilteredData] = useState<ImgDataType[]>(originalData);
   const [input, setInput] = useState('');
 
@@ -56,7 +56,7 @@ const ExploreFood = () => {
       <div className="container">
         <h2 className="text-center">Explore Foods</h2>
 
-        {filteredData.map(({ id, title, category, imgUrl }) => (
+        {filteredData.map(({ id, title, imgUrl }) => (
           <a href="category-foods.html" key={id}>
             <div className="box-3 float-container">
               <img
