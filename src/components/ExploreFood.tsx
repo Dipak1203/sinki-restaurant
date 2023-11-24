@@ -8,21 +8,34 @@ type ImgDataType = {
   title: string;
 };
 const ExploreFood = () => {
-  const [data, setData] = useState<ImgDataType[]>([]);
+  const [data, setData] = useState<ImgDataType[]>(imgData);
+  const [input,setInput] = useState('');
 
-  useEffect(() =>{
-    setData(imgData)
-  },[])
+
+  const onSubmit = async(e:any) =>{
+    e.preventDefault();
+
+    const filterData = imgData.filter((value) =>{
+      return value.category === input;
+    })
+
+    setData(filterData)
+  }
+  
+
+  // console.log(input)
 
   // console.log(data, " data here...")
   return (
     <section className="categories">
        <section className="food-search text-center">
       <div className="container">
-        <form>
+        <form onSubmit={onSubmit}>
           <input
             type="search"
             name="search"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
             placeholder="Search for Food.."
             required
           />
